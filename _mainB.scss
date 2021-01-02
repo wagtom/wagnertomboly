@@ -1,0 +1,27 @@
+main{
+    background: map-get($main_cores, principal); //_variables.scss
+    width: 60%;
+    @import 'corpo1'; //_corpo1.scss
+    .group{
+        @include displayMargim; //_mixins.scss
+        .date {
+            width: 140px;
+            font-weight: 500;
+        }.info{
+            // width: calc(100%  - 140px);
+            width: calc(100%  - 0px);
+            padding-left: 25px;
+            position: relative;
+            .info_title{
+                text-transform: uppercase;
+                font-weight: 800;
+                letter-spacing: 4px;
+            }
+            .info_com{
+                font-style: oblique;
+                letter-spacing: 3px;
+            }
+            @import 'antesDepois'; //_antesDepois.scss
+        }
+    }
+}

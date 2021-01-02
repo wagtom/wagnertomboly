@@ -1,0 +1,28 @@
+// uso em footer
+@mixin flexCenter($mode:flex, $direction: column) {
+    display: $mode;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+// uso em header.scss, _corpo1.scss
+@mixin lines_paddings {
+    line-height: 2em;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3%;
+}
+// icone das seções, utilizado em _corpo1.scss e header.scss
+@mixin icone {
+    max-width:40px;
+    max-height:40px;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    filter: contrast(.5) brightness(1.3) grayscale(.9);
+}
+// uso em espaçamento das Div's dentro do .group e no .title em _header.scss
+@mixin displayMargim($mode:flex, $margemBottom:()){
+    display: $mode;
+    // margin-bottom: $margemBottom;
+}

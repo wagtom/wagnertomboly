@@ -1,0 +1,5 @@
+footer{
+    background: map-get($main_cores, terceiro);
+    @include flexCenter;
+    font-size: .8em;
+}

@@ -1,0 +1,73 @@
+header{
+    background: map-get($main_cores, terceiro); //_variables.scss
+    @include lines_paddings; //_mixins.scss
+    .full_groups{
+        position: relative;
+        .title{
+            @include displayMargim(block,2%); //_mixins.scss
+            :before{
+                content: "";
+                position: absolute;
+                top: 35px;
+                left: 0;
+                width: 50px;
+                height: 2px;
+                background: map-get($main_cores, terceiro); //_variables.scss
+            }
+            .title_a{
+                display: flex;
+                justify-content: flex-start;
+                @keyframes spin{
+                    to { transform: rotate(360deg);}
+                }
+                .icone{
+                    @include icone; //_mixins.scss
+                    animation: spin 1s linear infinite;
+                }
+                .navegar{
+                    display: flex;
+                    margin-left: 0px;
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                    padding-bottom: 0;
+                    :hover{
+                        color: map-get($main_cores, terceiro); //_variables.scss
+                        background-color: darken(map-get($main_cores, secundario), 20%); //_variables.scss
+                    }
+                    .active{
+                        background-color: darken(map-get($main_cores, secundario), 20%); //_variables.scss
+                        a{
+                            color: map-get($main_cores, terceiro); //_variables.scss
+                        }
+                    }
+                    div{
+                        padding: 3px;
+                        background-color: map-get($main_cores, secundario); //_variables.scss
+                        margin: 3px;
+                        border-radius: 3px;
+                        a{
+                            text-decoration: none;
+                            color: map-get($main_cores, quarto); //_variables.scss
+                        }
+
+                    }
+                }
+            }
+        }
+        .group{
+            display: block;
+            .foto{
+                display: flex;
+                padding-top: 4%;
+                [src]{ max-width:150px;
+                    max-height:150px;
+                    width: auto;
+                    height: auto;}
+                p{
+                    margin-left: 3%;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,27 @@
+aside{
+    background: map-get($main_cores, secundario); //_variables.scss
+    width: 40%;
+    @import 'corpo1'; //_corpo1.scss
+    .estoria2{
+        font-size: 1.3em;
+        letter-spacing: 2px;
+    }
+    .group{
+        @include displayMargim; //_mixins.scss
+        .date{
+            width: 65px;
+        }
+        .info{
+            width: calc(100%  - 65px);
+            padding-left: 25px;
+            position: relative;
+            @import 'antesDepois'; //_antesDepois.scss
+        }
+        .cidade{
+            max-width:150px;
+            max-height:150px;
+            width: auto;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+// uso @import 'corpo1',nos títulos das seções, em _mainB.scss e _aside.scss
+@include lines_paddings;
+.full_groups{
+    position: relative;
+    .title{
+        display: flex;
+        // margin-bottom: 5%;
+        :before{
+            content: "";
+            position: absolute;
+            top: 35px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: map-get($main_cores, quarto);
+        }
+        .icone{
+            max-width:40px;
+            max-height:40px;
+            width: auto;
+            height: auto;
+            margin-left: 10px;
+            filter: contrast(.5) brightness(1.3) grayscale(.9);
+        }
+        .icone2{
+            max-width:40px;
+            max-height:40px;
+            width: auto;
+            height: auto;
+            margin-left: 10px;
+        }
+    }
+}
+ul{
+    list-style: none;
+}
