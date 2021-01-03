@@ -1,6 +1,6 @@
 // @import'./responsivo', usado no final do main.scss
-// @media only screen and (min-width:500px) and (max-width:700px){
-@media only screen and (max-width:700px){
+@media only screen and (min-width:500px) and (max-width:700px){
+// @media only screen and (max-width:700px){
     html{
         body{
             .corpo{
@@ -15,24 +15,24 @@
         }
     }
 }
-// @media only screen and (max-width:500px){
-//     html{
-//         body{
-//             .corpo{
-//                 .corpo_central{
-//                     display: block;
-//                     margin: 0;
-//                     padding: 0;
-//                     main{
-//                         width: 100%;
-//                         .main_group .group{ display: block;}
-//                     }
-//                     aside{
-//                         width: 100%;
-//                         .main_group .group{ display: block;}
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+@media only screen and (max-width:500px){
+    html{
+        body{
+            .corpo{
+                .corpo_central{
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    main{
+                        width: 100%;
+                        .main_group .group{ display: block;}
+                    }
+                    aside{
+                        width: 100%;
+                        .main_group .group{ display: block;}
+                    }
+                }
+            }
+        }
+    }
+}
