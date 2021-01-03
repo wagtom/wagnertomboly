@@ -1,4 +1,5 @@
-// uso @import 'corpo1',nos títulos das seções, em _mainB.scss e _aside.scss
+// @import 'corpo1'
+// usado nos títulos das seções, em _mainB.scss e _aside.scss
 @include lines_paddings;
 .full_groups{
     position: relative;
@@ -28,6 +29,14 @@
             width: auto;
             height: auto;
             margin-left: 10px;
+        }
+    }
+    .main_group{
+        .group{
+            text-align: justify;
+            .date{
+                padding-right: 3%;
+            }
         }
     }
 }

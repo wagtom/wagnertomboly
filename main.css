@@ -68,6 +68,7 @@ header .full_groups {
 }
 header .full_groups .title {
   display: block;
+  margin-bottom: 2%;
 }
 header .full_groups .title :before {
   content: "";
@@ -114,7 +115,6 @@ header .full_groups .title .title_a .navegar .active a {
   color: white;
 }
 header .full_groups .title .title_a .navegar div {
-  padding: 3px;
   background-color: burlywood;
   margin: 3px;
   border-radius: 3px;
@@ -122,21 +122,27 @@ header .full_groups .title .title_a .navegar div {
 header .full_groups .title .title_a .navegar div a {
   text-decoration: none;
   color: brown;
+  padding: 5px;
+  border-radius: 3px;
 }
-header .full_groups .group {
+header .full_groups .main_group .group {
   display: block;
+  padding: 4%;
+  text-align: justify;
 }
-header .full_groups .group .foto {
+header .full_groups .main_group .group p {
+  margin-bottom: 2%;
+}
+header .full_groups .main_group .group .foto {
   display: flex;
-  padding-top: 4%;
 }
-header .full_groups .group .foto [src] {
+header .full_groups .main_group .group .foto [src] {
   max-width: 150px;
   max-height: 150px;
   width: auto;
   height: auto;
 }
-header .full_groups .group .foto p {
+header .full_groups .main_group .group .foto p {
   margin-left: 3%;
 }
 
@@ -178,11 +184,18 @@ main .full_groups .title .icone2 {
   height: auto;
   margin-left: 10px;
 }
+main .full_groups .main_group .group {
+  text-align: justify;
+}
+main .full_groups .main_group .group .date {
+  padding-right: 3%;
+}
 main ul {
   list-style: none;
 }
 main .group {
   display: flex;
+  margin-bottom: "";
 }
 main .group .date {
   width: 140px;
@@ -260,6 +273,12 @@ aside .full_groups .title .icone2 {
   height: auto;
   margin-left: 10px;
 }
+aside .full_groups .main_group .group {
+  text-align: justify;
+}
+aside .full_groups .main_group .group .date {
+  padding-right: 3%;
+}
 aside ul {
   list-style: none;
 }
@@ -269,6 +288,7 @@ aside .estoria2 {
 }
 aside .group {
   display: flex;
+  margin-bottom: "";
 }
 aside .group .date {
   width: 65px;

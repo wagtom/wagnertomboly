@@ -21,8 +21,8 @@
     margin-left: 10px;
     filter: contrast(.5) brightness(1.3) grayscale(.9);
 }
-// uso em espaçamento das Div's dentro do .group e no .title em _header.scss
-@mixin displayMargim($mode:flex, $margemBottom:()){
+// uso em espaçamento das Div's dentro do .group e no .title do _header.scss
+@mixin displayMargim($mode:flex, $margemBottom:""){
     display: $mode;
-    // margin-bottom: $margemBottom;
+    margin-bottom: $margemBottom;
 }
